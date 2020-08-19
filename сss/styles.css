@@ -866,7 +866,7 @@ img {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
+  /*height: 581px;*/
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -962,7 +962,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -993,7 +993,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
 
   letter-spacing: 0.01em;
 
@@ -1001,11 +1001,25 @@ img {
   margin-bottom: 4px;
 }
 
-.hero-button.active-hero-btn.special-hov {
-  border: 1px;
-  border-color: transparent;
-}
-
 .special-hov:hover {
   border-color: var(--hover-button-blue);
+}
+
+.modal-feedback {
+  margin-bottom: 20px;
+}
+
+.button-margin {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-modal-agreem {
+  color: var(--hover-button-blue);
+}
+
+.checkbox {
+  margin-right: 9px;
 }
