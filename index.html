@@ -83,10 +83,22 @@
               </svg>
             </button>
             <form>
-              <label for="name">
+              <h2 class="modal-title">Залиште свої дані, Ми Вам передзвонимо</h2>
+              <div class="form-field "><label class="submission-info" for="name">
                 Ім'я
               </label>
-              <input type="text" name="name" id="name" />
+              <input class="contact-info" type="text" name="name" id="name" /></div>
+              <div class="form-field"><label class="submission-info" for="">Телефон</label>
+              <input class="contact-info" type="tel"></div>
+              
+              <div class="form-field"><label class="submission-info" for="">E-mail</label>
+              <input class="contact-info" type="email"></div>
+              <div class="form-field"><label class="submission-info" for="">Комантарі</label>
+              <textarea class="comments" name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea></div>
+
+            <div><input type="checkbox">
+            <label for="">Погоджуюся з розсилкою і принімаю <a href="">Умови договору</a> </label></div>
+              <div><button class="hero-button active-hero-btn special-hov">Відправити</button></div>
             </form>
           </div>
         </div>
@@ -543,7 +555,7 @@
         <section class="footer-media">
           <div>
             <h2 class="visually-hidden">Cекція соціальні мережі</h2>
-            <p>Приєднуйтеся</p>
+            <p class="feedback">Приєднуйтеся</p>
             <ul class="list social-icon-list">
               <li class="media-item social-icon-item">
                 <a
@@ -601,7 +613,20 @@
         <section>
           <div>
             <h2 class="visually-hidden">Секція підписки</h2>
-            <p>Підпишіться на розсилку</p>
+            <p class="feedback">Підпишіться на розсилку</p>
+            <form class="form-flex">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="hero-button active-hero-btn submission" type="submit">
+                Підписатися <svg class="letter" width="24" height="24">
+                  <use class="letter-icon" href="./img/sprite.svg#icon-icon-send"></use>
+                </svg></a>
+              </button>
+            </form>
           </div>
         </section>
       </div>
