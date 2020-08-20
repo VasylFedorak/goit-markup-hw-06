@@ -911,7 +911,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-close:hover .item-close {
+.btn-close:hover .item-close,
+.btn-close:focus .item-close {
   fill: var(--hover-button-blue);
 }
 
@@ -1003,6 +1004,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
 }
 
 .comments {
@@ -1086,4 +1088,27 @@ img {
   background-color: var(--bgc);
 
   border: 1px solid var(--hover-button-blue);
+}
+
+.layout-box {
+  position: relative;
+}
+
+.layout-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.contact-info:focus {
+  outline: 1px solid #2196f3;
+}
+
+.comments:focus {
+  outline: 1px solid #2196f3;
+}
+
+.contact-info:focus .layout-icon {
+  fill: var(--hover-button-blue);
 }
