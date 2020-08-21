@@ -75,18 +75,28 @@
             Замовити послугу
           </button>
         </div>
+
+<!--Модальне вікно-->
+
         <div class="backdrop is-hidden" data-modal>
+
+         
           <div class="modal">
+
+            <!--Кнопка закриття  -->
             <button class="btn-close" data-modal-close>
               <svg class="item-close" width="11" height="11">
                 <use href="./img/sprite.svg#icon-Vector-modal"></use>
               </svg>
             </button>
+
+            <!--Рзмітка модального вікна-->
+
             <form>
               <h2 class="modal-title">Залиште свої дані, Ми Вам передзвонимо</h2>
               
-              <label class="form-field  submission-info" for="name">
-                Ім'я
+              <label class="form-field  " for="name">
+                <span class="form-title">Ім'я</span> 
                 <div class="layout-box">
                   <input class="contact-info" type="text" name="name" id="name" />
                   <svg class="layout-icon" width="12" height="12">
@@ -97,8 +107,8 @@
               
               
               
-            <label class="form-field submission-info" for="tel">
-              Телефон
+            <label class="form-field " for="tel">
+              <span class="form-title">Телефон</span>
               <div class="layout-box">
                 <input class="contact-info" type="tel" name="tel" id="tel">
                 <svg class="layout-icon" width="13" height="13">
@@ -107,11 +117,9 @@
               </div>
             </label>
               
-            
-   
-              
-              <label class="form-field submission-info" for="email">
-                E-mail
+                          
+              <label class="form-field " for="email">
+                <span class="form-title">E-mail</span> 
                 <div class="layout-box">
                   <input class="contact-info" type="email" name="email" id="email">
                 <svg class="layout-icon" width="15" height="12">
@@ -121,12 +129,17 @@
             </label>
                 </a>
               
-            
-              <label class="modal-feedback submission-info" for="comments">Комантарі</label>
-              <textarea class="comments" name="comments" id="comments" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-<label class="checkbox-label">
-  <input class="checkbox-input" type="checkbox" name="policy"><span class="check-icon"></span>
-Погоджуюся з розсилкою і приймаю <a href="#">Умови договору</a></label>
+              <label class="modal-feedback" for="comments">
+                <span class="form-title">Коментарі</span> 
+              <textarea class="comments" name="comments" id="comments"  placeholder="Введіть текст"></textarea>
+            </label>
+
+              <label class="checkbox-label">
+                <input class="checkbox-input" type="checkbox" name="policy">
+                <span class="check-icon"></span>
+                Погоджуюся з розсилкою і приймаю <a class="policy-link" href="#">Умови договору</a>
+              </label>
+              
             
               <button class="hero-button active-modal-btn button-margin btn-submit" >
                 Відправити
