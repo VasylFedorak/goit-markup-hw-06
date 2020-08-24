@@ -1174,10 +1174,10 @@ img {
 }
 
 .checkbox-input:checked + .check-icon {
-  border-color: transparent;
+  border-color: var(--hover-button-blue);
   background-color: var(--hover-button-blue);
   background-image: url(../img/img-icons/vectorcheck.svg);
   background-size: contain;
-  /*background-origin: border-box;*/
-  background-repeat: no-repeat;
+  background-origin: border-box;
+  /*background-repeat: no-repeat;*/
 }
